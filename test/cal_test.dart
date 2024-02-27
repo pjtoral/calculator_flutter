@@ -1,6 +1,10 @@
 // test/calculator_test.dart
+import 'dart:math';
 import 'package:flutter_test/flutter_test.dart';
-import '../lib/cal_repo.dart'; // Adjust the import path based on your project struct
+import 'package:flutter_calculator_test/cal_repo.dart'; // Adjust the import path based on your project struct
+import 'package:mocktail/mocktail.dart';
+
+class RandomMock extends Mock implements Random {}
 
 void main() {
   late Calculator calculator;
